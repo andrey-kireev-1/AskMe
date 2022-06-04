@@ -1,0 +1,7 @@
+{% load static %}
+{% load askme_tags %}
+
+{% show_best_users as users %}
+{% for user in users %}
+<a href="#"><p>{{ user.username }}</p></a>
+{% endfor %}

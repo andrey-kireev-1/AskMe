@@ -1,0 +1,44 @@
+{% load static %}
+
+<header class="d-flex justify-content-center text-white bg-dark">
+    <div class="my-container hpx-100">
+            <a class="navbar-brand col-md-1 text-white" href="{% url 'index' %}"><h3>AskME</h3></a>
+            <form class="form col-md-4 offset-md-1" action="/find/" method="get">
+                <input class="form-control " name="find_str" type="text" placeholder="Поиск..." aria-label="deafult input example">
+            </form>
+            <div class=" text-start col-md-2 ">
+                <a href="{% url 'ask' %}"><button type="button" class="btn btn-success center-block w-50">ASK!</button></a>
+            </div>
+
+            {% if request.user.is_authenticated %}
+
+            <div class="col-md-1 d-flex justify-content-end align-items-end">
+                <img src="{{ request.user.profile.avatar.url }}" class="w-75">
+            </div>
+            <div class="col-md-2  ">
+                <div class="row h-50">
+                    <a class="text-decoration-none link" href="{% url 'settings' %}"><p class="lead d-flex align-items-end">{{ request.user.username }}</p></a>
+                </div>
+                <div class="row h-50">
+                    <div class="col d-flex align-items-center">
+                        <a class="text-decoration-none link" href="{% url 'settings' %}">Настройки</a>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <a class="text-decoration-none link" href="{% url 'logout' %}">Выход</a>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+
+            <div class="col-md-2 d-flex flex-row">
+                <div class="col d-flex align-items-center justify-content-end">
+                    <a class="text-decoration-none link" href="{% url 'register' %}">Зарегистрироваться</a>
+                </div>
+                <div class="col d-flex align-items-center justify-content-end">
+                    <a class="text-decoration-none link" href="{% url 'login' %}">Войти</a>
+                </div>
+            </div>
+            {% endif %}
+    </div>
+    
+</header>

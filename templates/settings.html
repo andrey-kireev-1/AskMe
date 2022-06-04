@@ -1,0 +1,12 @@
+{% extends "includes/base.html"%}
+{% load static %}
+{% load bootstrap4 %}
+{% block question-header%} 
+<div class="question-header">
+    <span class="big-text ">Profile: {{ request.user.username }}<span>
+</div>
+{% endblock question-header%} 
+
+{% block content%} 
+    {%include "includes/settings_form.html"%} 
+{% endblock content%}  

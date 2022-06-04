@@ -1,0 +1,397 @@
+.wpx-25{
+    width: 25px;
+}
+.wpx-50{
+    width: 50px;
+}
+
+.hpx-25{
+    height: 25px;
+}
+.hpx-50{
+    height: 50px;
+}
+.hpx-75{
+    height: 75px;
+}
+.hpx-100{
+    height: 100px;
+}
+.hpx-125{
+    height: 125px;
+}
+.hpx-150{
+    height: 150px;
+}
+.hpx-175{
+    height: 175px;
+}
+.hpx-200{
+    height: 200px;
+}
+.hpx-250{
+    height: 250px;
+}
+.hpx-300{
+    height: 300px;
+}
+.hpx-350{
+    height: 350px;
+}
+.hpx-400{
+    height: 400px;
+}
+.hpx-450{
+    height: 450px;
+}
+.hpx-500{
+    height: 500px;
+}
+.hpx-550{
+    height: 550px;
+}
+.hpx-600{
+    height: 600px;
+}
+.hpx-650{
+    height: 650px;
+}
+.hpx-700{
+    height: 700px;
+}
+.hpx-750{
+    height: 750px;
+}
+.hpx-800{
+    height: 800px;
+}
+.hpx-850{
+    height: 850px;
+}
+
+
+.h-5{
+    height: 5%;
+}
+.h-10{
+    height: 10%;
+}
+.h-15{
+    height: 15%;
+}
+.h-20{
+    height: 20%;
+}
+.h-25{
+    height: 25%;
+}
+.h-30{
+    height: 30%;
+}
+.h-35{
+    height: 35%;
+}
+.h-40{
+    height: 40%;
+}
+.h-45{
+    height: 45%;
+}
+.h-50{
+    height: 50%;
+}
+.h-55{
+    height: 55%;
+}
+.h-60{
+    height: 60%;
+}
+.h-65{
+    height: 65%;
+}
+.h-70{
+    height: 70%;
+}
+.h-75{
+    height: 75%;
+}
+.h-80{
+    height: 80%;
+}
+.h-85{
+    height: 85%;
+}
+.h-90{
+    height: 90%;
+}
+.h-95{
+    height: 95%;
+}
+.h-100{
+    height: 100%;
+}
+
+.w-5{
+    width: 5%;
+}
+.w-10{
+    width: 10%;
+}
+.w-15{
+    width: 15%;
+}
+.w-20{
+    width: 20%;
+}
+.w-25{
+    width: 25%;
+}
+.w-30{
+    width: 30%;
+}
+.w-35{
+    width: 35%;
+}
+.w-40{
+    width: 40%;
+}
+.w-45{
+    width: 45%;
+}
+.w-50{
+    width: 50%;
+}
+.w-55{
+    width: 55%;
+}
+.w-60{
+    width: 60%;
+}
+.w-65{
+    width: 65%;
+}
+.w-70{
+    width: 70%;
+}
+.w-75{
+    width: 75%;
+}
+.w-80{
+    width: 80%;
+}
+.w-85{
+    width: 85%;
+}
+.w-90{
+    width: 90%;
+}
+.w-95{
+    width: 95%;
+}
+.w-100{
+    width: 100%;
+}
+
+
+.h-img-50{
+    height: 50%;
+    width: 50%;
+}
+.h-img-25{
+    height: 25%;
+    width: 25%;
+}
+.h-img-90{
+    width: 5%;
+}
+
+.between{
+    display: flex;
+    justify-content: space-between !important;
+}
+.text-vert-center{
+    display: flex;
+    align-items: center;
+}
+.no-margin{
+    margin: 0;
+}
+
+.link{
+    color: white;
+}
+.link:hover{
+    transition: 0.2s linear;
+    color: #2d7448;
+}
+
+/*Добавлен свой класс контейнер (не используется для вывода основного контента)*/
+.my-container{
+    display: flex;
+    width: 1320px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.green{
+    background: green;
+}
+.yellow{
+    background: yellow;
+}
+.pink{
+    background: pink;
+}
+.blue{
+    background: blue;
+}
+.orange{
+    background: orange;
+}
+.purple{
+    background: purple;
+}
+.aqua{
+    background: aqua;
+}
+.brown{
+    background: brown;
+}
+.sandybrown{
+    background: sandybrown;
+}
+.darkcyan{
+    background: darkcyan;
+}
+.olive{
+    background: olive;
+}
+.violet{
+    background: violet;
+}
+
+.dislike{
+    transition: 0.1s linear;
+    fill: #212529;
+}
+.like{
+    transition: 0.1s linear;
+    fill: #212529;
+}
+
+.dislike:hover{
+    fill: #dc3b45;
+}
+
+.like:hover{
+    fill: #2d7448;
+}
+
+
+/*чекбокс выбора корректного ответа*/
+.label-cbx-unchecked {
+    user-select: none;
+    cursor: pointer;
+    margin-bottom: 0; }
+    .label-cbx-unchecked input:checked + .checkbox {
+      border-color: #2d7448; }
+      .label-cbx-unchecked input:checked + .checkbox svg path {
+        fill: #2d7448; }
+      .label-cbx-unchecked input:checked + .checkbox svg polyline {
+        stroke-dashoffset: 0; }
+    .label-cbx-unchecked:hover .checkbox svg path {
+      stroke-dashoffset: 0; }
+    .label-cbx-unchecked .checkbox {
+      position: relative;
+      top: 2px;
+      float: left;
+      margin-right: 8px;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #C8CCD4;
+      border-radius: 3px; }
+      .label-cbx-unchecked .checkbox svg {
+        position: absolute;
+        top: -2px;
+        left: -2px; }
+        .label-cbx-unchecked .checkbox svg path {
+          fill: none;
+          stroke: #2d7448;
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 71px;
+          stroke-dashoffset: 71px;
+          transition: all .6s ease; }
+        .label-cbx-unchecked .checkbox svg polyline {
+          fill: none;
+          stroke: #FFF;
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 18px;
+          stroke-dashoffset: 18px;
+          transition: all .3s ease; }
+    .label-cbx-unchecked > span {
+      pointer-events: none;
+      vertical-align: middle; }
+  
+.label-cbx-checked {
+        user-select: none;
+        cursor: pointer;
+        margin-bottom: 0; }
+        .label-cbx-checked input + .checkbox {
+          border-color: #2d7448; }
+          .label-cbx-checked input + .checkbox svg path {
+            fill: #2d7448; }
+          .label-cbx-checked input + .checkbox svg polyline {
+            stroke-dashoffset: 0; }
+            .label-cbx-checked input:checked + .checkbox {
+                border-color: #C8CCD4; }
+                .label-cbx-checked input:checked  + .checkbox svg path {
+                    fill: none; }
+                .label-cbx-checked input:checked  + .checkbox svg polyline {
+                    stroke-dashoffset: 18px; }
+        .label-cbx-checked:hover .checkbox svg path {
+          stroke-dashoffset: 0; }
+        .label-cbx-checked .checkbox {
+          position: relative;
+          top: 2px;
+          float: left;
+          margin-right: 8px;
+          width: 20px;
+          height: 20px;
+          border: 2px solid #C8CCD4;
+          border-radius: 3px; }
+          .label-cbx-checked .checkbox svg {
+            position: absolute;
+            top: -2px;
+            left: -2px; }
+            .label-cbx-checked .checkbox svg path {
+              fill: none;
+              stroke: #2d7448;
+              stroke-width: 2;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-dasharray: 71px;
+              stroke-dashoffset: 71px;
+              transition: all .6s ease; }
+            .label-cbx-checked .checkbox svg polyline {
+              fill: none;
+              stroke: #FFF;
+              stroke-width: 2;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-dasharray: 18px;
+              stroke-dashoffset: 18px;
+              transition: all .3s ease; }
+        .label-cbx-checked > span {
+          pointer-events: none;
+          vertical-align: middle; }
+
+  .invisible {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    opacity: 0; }

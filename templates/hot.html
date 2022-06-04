@@ -1,0 +1,14 @@
+{% extends "includes/base.html"%}
+{% load static %}
+
+
+{% block content %}
+<span class="d-flex flex-row justify-content-start align-items-end pt-4">
+    <h1 class="w-40">Лучшие вопросы</h1>
+    <a  href="{% url 'index' %}"><h5>Новые вопросы</h5></a>
+</span>
+{% for question in lists %}
+    {% include "includes/single_question.html" %}
+  {% endfor %}
+{% include "includes/pagination.html" %}
+{% endblock content %}

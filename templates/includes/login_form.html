@@ -1,0 +1,50 @@
+
+{% load bootstrap4 %}
+<form class="login col-8" action="/login/" method="post">
+        {% csrf_token %}
+    <input type="hidden" name="next" value="{{ request.GET.next }}" />
+    <div class="mb-3">
+    {% bootstrap_form form %}
+    </div>
+        {% buttons %}
+    <button type="submit" class="btn btn-primary">Вход</button>
+    <br>
+        <a class= "marginleft40" href="{% url 'register' %}">Создать новый аккаунт</a>
+        {% endbuttons %}
+
+</form>
+{% comment %} 
+<form class="login" action="/login/" method="post">
+{% csrf_token %}
+<input type="hidden" name="next" value="{{ request.GET.next }}" />
+<div class="row settings-row ">
+
+    <div class="col-3">
+        <span class="normal-text ">Вход<span>
+    </div>
+    <div class="col-9 settings-field ">
+        <input type="text" class="form-control" placeholder="Login" aria-label="Login">
+    </div>
+</div>
+<div class="row settings-row ">
+    <div class="col-3">
+        <span class="normal-text ">Пароль<span>
+    </div>
+    <div class="col-9 settings-field ">
+        <div>
+            <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+        </div>
+    </div>
+</div>
+<div class="row settings-row ">
+
+    <div class="col-3">
+        
+    </div>
+    <div class="col-9 ask-btn-pad">
+        
+        <button id="ask-btn" type="submit" class="btn btn-primary">Вход</button><br><br>
+        <a class = "margintop40" href = "{% url 'register' %}">Создать новый аккаунт</a>
+    </div>
+</div>
+</form> {% endcomment %}

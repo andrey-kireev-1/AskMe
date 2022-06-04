@@ -1,0 +1,13 @@
+{% load bootstrap4 %}
+<form class="col-8" action="/ask/" method="post">
+           {% csrf_token %}
+<div class="col-12">
+    {% bootstrap_form form %}
+    
+</div>
+    {% buttons %}
+<div class="form-btn">
+    <button class="btn btn-primary margintop40" type="submit">ASK!</button>
+</div>
+    {% endbuttons %}
+</form>

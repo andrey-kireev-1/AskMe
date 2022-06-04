@@ -1,0 +1,19 @@
+{% load static %}
+{% load askme_tags %}
+
+{% show_tags as tags %}
+{% for key,value in tags.items %}
+<span class="d-flex flex-row justify-content-around align-items-center pt-2">
+    
+    {% for t in value %}
+    <a class="text-decoration-none" href="{% url 'tag' t %}">
+        <h5 class="text-dark">{{ t }}</h5>
+    </a>
+    
+    {% endfor %}
+    <br>
+    
+    
+
+</span>
+{% endfor %}

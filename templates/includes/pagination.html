@@ -1,0 +1,51 @@
+{% load static %}
+<!--<div class="d-flex align-items-center justify-content-end w-95 mb-2">
+    <div class="pagination">
+        <span class="step-links">
+            {% if questions.has_previous %}
+                <a href="?page=1">&laquo; first</a>
+                <a href="?page={{ questions.previous_page_number }}">previous</a>
+            {% endif %}
+    
+            <span class="page-item current">
+                Page {{ questions.number }} of {{ questions.paginator.num_pages }}.
+            </span>
+    
+            {% if questions.has_next %}
+                <a href="?page={{ questions.next_page_number }}">next</a>
+                <a href="?page={{ questions.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
+  </div>-->
+<div class="d-flex align-items-center justify-content-end w-95 mb-2">
+    <nav class="d-flex mt-4">
+      <ul class="pagination">
+        {% if lists.has_previous %}
+        <li class="page-item enabled">
+            <a class="page-link" href="?page=1">&laquo;</a>
+        </li>
+        <li class="page-item enabled">
+            <a class="page-link" href="?page={{ lists.previous_page_number }}">{{ lists.previous_page_number }}</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link">&laquo;</a>
+        </li>
+        {% endif %}
+
+        {% if lists.has_next != false and lists.has_next != false %}
+        <li class="page-item current active"><a class="page-link">{{ lists.number }}</a></li>
+        {% endif %}
+
+        {% if lists.has_next %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ lists.next_page_number }}">{{ lists.next_page_number }}</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="?page={{ lists.paginator.num_pages }}">&raquo;</a>
+        </li> 
+        {% endif %}
+      </ul>
+    </nav>
+</div>

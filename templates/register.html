@@ -1,0 +1,26 @@
+{% extends "includes/base.html"%}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block content %}
+<div class="col-4 q-title center">
+    <h1 class="title-content">Регистрация</h1>
+</div>
+
+{% if alert %}
+    <div class="alert alert-danger center" role="alert">
+        {{ alert }}
+    </div>
+{% endif %}
+
+<form class="signup center"  enctype="multipart/form-data" action="/register/" method="post">
+            {% csrf_token %}
+    <div class="mb-3">
+         {% bootstrap_form form %}
+    </div>
+    {% buttons %}
+    <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+    {% endbuttons %}
+</form>
+{% endblock content %}
+                

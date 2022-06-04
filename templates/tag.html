@@ -1,0 +1,13 @@
+{% extends "includes/base.html"%}
+{% load static %}
+
+
+{% block content %}
+<span class="d-flex flex-row justify-content-start align-items-end pt-4">
+  <h2 class="w-40">Tag: <a href="{% url 'tag' tag %}">{{tag}}</a></h2>
+</span>
+{% for question in lists %}
+    {% include "includes/single_question.html" %}
+{% endfor %}
+{% include "includes/pagination.html" %}
+{% endblock content %}

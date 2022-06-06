@@ -23,3 +23,5 @@ Params of database:
 - Tags table - 20 000 rows
 - Questions table - 10 000 rows 
 - Profiles table - 10 000 rows
+________
+###### Kireev 2021
